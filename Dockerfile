@@ -1,5 +1,7 @@
-FROM argoproj/argocd:v2.6.11 # Replace tag with the appropriate argo version
+FROM argoproj/argocd:v2.6.11
+
 USER root
+
 RUN apt-get update && \
     apt-get install -y \
         curl && \
